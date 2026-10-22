@@ -24,7 +24,7 @@ from base.models import (
     StockMovement, Supplier,
 )
 
-SHOP_TZ = ZoneInfo('Asia/Dhaka')
+SHOP_TZ = ZoneInfo('Asia/Kolkata')  # India Standard Time: days and reports follow the shop's clock
 EXPIRY_WARNING_DAYS = 7
 
 
