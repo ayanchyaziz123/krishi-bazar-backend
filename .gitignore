@@ -1,0 +1,22 @@
+myenv/
+.venv/
+.env
+# Supplier receipts uploaded while testing locally
+private_uploads/
+
+# Local secrets and data. Never commit these.
+.local_secret_key
+.env.*
+!.env.example
+auth.txt
+db.sqlite3
+*.sqlite3
+# Generated and third-party files
+__pycache__/
+*.pyc
+venv/
+staticfiles/
+static/images/site/
+# The frontend has its own repository
+frontend/
+.DS_Store

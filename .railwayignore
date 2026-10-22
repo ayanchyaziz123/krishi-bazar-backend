@@ -1,0 +1,47 @@
+# Deploys use `railway up --no-gitignore` (the frontend build must be uploaded, but the
+# root .gitignore leaves out the whole frontend folder). Everything private that
+# .gitignore excludes is therefore listed here too.
+
+# Local environments, secrets and data
+.git/
+.venv/
+venv/
+myenv/
+.env
+.env.*
+!.env.example
+.local_secret_key
+db.sqlite3
+*.sqlite3
+.DS_Store
+docs/
+__pycache__/
+*.pyc
+staticfiles/
+
+# Personal and unrelated files
+auth.txt
+mobile image/
+screenshoot/
+project-final-report-template.doc
+resources/
+
+# Only the current product photos (old laptop images are left out)
+static/images/*
+!static/images/product-*.jpg
+
+# Old laptop price model and data (no longer used)
+static/model/
+static/data_set/
+base/views/model/
+
+# Frontend sources (only the built site in frontend/build is needed)
+frontend/node_modules/
+frontend/src/
+frontend/public/
+frontend/.git/
+frontend/.env*
+frontend/*.config.js
+frontend/.eslintcache
+# Supplier receipts uploaded while testing locally
+private_uploads/

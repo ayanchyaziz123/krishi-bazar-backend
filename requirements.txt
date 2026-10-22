@@ -1,0 +1,24 @@
+# Web framework and API
+Django>=4.2,<5.0
+djangorestframework>=3.15,<3.16
+djangorestframework-simplejwt>=5.3,<5.4
+django-cors-headers>=4.3,<5
+django-storages>=1.14,<2
+
+# Serving and deployment
+gunicorn>=22,<24
+whitenoise>=6.6,<7
+dj-database-url>=2.1,<3
+psycopg2-binary>=2.9,<3
+python-dotenv>=1.0,<2
+
+# Images
+Pillow>=10,<12
+
+# Future-price prediction (linear regression on price history)
+numpy>=1.26,<3
+pandas>=2.1,<3
+scikit-learn>=1.4,<2
+
+# Shopping assistant (xAI Grok via the OpenAI-compatible API)
+openai>=1.66,<3
